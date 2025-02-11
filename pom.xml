@@ -13,6 +13,7 @@
 		<java.version>17</java.version>
 		<spring-version>3.4.0</spring-version>
 		<spring-cloud.version>4.2.0</spring-cloud.version>
+		<!--spring-security.version>5.8.8</spring-security.version-->
 	</properties>
   <dependencies>
 	<dependency>
@@ -35,11 +36,17 @@
 	    <artifactId>spring-boot-starter-security</artifactId>
 	    <!--version>${spring-version}</version>-->	    
 	</dependency>
-	<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-jwt -->
+	<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-jwt-->
 	<dependency>
 	    <groupId>org.springframework.security</groupId>
 	    <artifactId>spring-security-jwt</artifactId>
 	    <version>1.1.1.RELEASE</version>
+	</dependency>
+
+	<dependency>
+	    <groupId>javax.servlet</groupId>
+	    <artifactId>javax.servlet-api</artifactId>
+	    <version>4.0.1</version> <!-- Or a version compatible with your Spring Boot version -->
 	</dependency>
 
 	<dependency>
